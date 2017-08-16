@@ -1,0 +1,14 @@
+﻿<div ng-controller="KendoStuffController">
+    <h1>{{testData}}</h1>
+    <h4>The component has been initialized to only allow a single file to be uploaded with a max file size of 30MB. To change the max size we need to modify logic in the JS and in the web.config</h4>
+    <div class="test-component">
+        Description: <input type="text" id="fileDesc"/><br /><br />
+        Files: <input name="files" 
+                type="file"
+                kendo-upload
+                k-async="fileAsyncOptions"
+                k-validation="validationOptions"
+                k-multiple="false"
+                k-upload="uploadFile"/>
+    </div>
+</div>
